@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:bind="http://schemas.android.com/tools">
+    xmlns:bind="http://schemas.android.com/apk/res-auto">
 
     <data>
         <import type="android.view.View" />
         <import type="com.google.android.flexbox.JustifyContent" />
-        <import type="org.linphone.core.ChatMessage.State" />
+        <import type="org.sipout.phone.core.ChatMessageState" />
         <variable
             name="onLongClickListener"
             type="View.OnLongClickListener" />
@@ -21,7 +21,7 @@
             type="View.OnClickListener" />
         <variable
             name="model"
-            type="org.linphone.ui.main.chat.model.MessageModel" />
+            type="org.sipout.phone.ui.main.chat.model.MessageModel" />
         <variable
             name="inflatedVisibility"
             type="Integer" />
@@ -213,7 +213,7 @@
                 bind:model="@{model}"
                 bind:onLongClickListener="@{onLongClickListener}" />
 
-            <org.linphone.ui.main.chat.view.ChatBubbleTextView
+            <org.sipout.phone.ui.main.chat.view.ChatBubbleTextView
                 style="@style/default_text_style"
                 android:id="@+id/text_content"
                 android:onLongClick="@{onLongClickListener}"

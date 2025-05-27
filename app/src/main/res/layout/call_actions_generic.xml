@@ -6,7 +6,7 @@
         <import type="android.view.View" />
         <variable
             name="viewModel"
-            type="org.linphone.ui.call.viewmodel.CurrentCallViewModel" />
+            type="org.sipout.phone.ui.call.viewmodel.CurrentCallViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -89,7 +89,7 @@
             app:layout_constraintStart_toStartOf="@id/toggle_mute_mic"
             app:layout_constraintEnd_toEndOf="@id/toggle_mute_mic" />
 
-        <org.linphone.ui.call.view.VuMeterView
+        <org.sipout.phone.ui.call.view.VuMeterView
             android:id="@+id/record_volume_vu_meter"
             android:layout_width="0dp"
             android:layout_height="0dp"

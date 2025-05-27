@@ -10,7 +10,7 @@
             type="View.OnClickListener" />
         <variable
             name="viewModel"
-            type="org.linphone.ui.assistant.viewmodel.ThirdPartySipAccountLoginViewModel" />
+            type="org.sipout.phone.ui.assistant.viewmodel.ThirdPartySipAccountLoginViewModel" />
     </data>
 
     <ScrollView

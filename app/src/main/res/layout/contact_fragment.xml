@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:bind="http://schemas.android.com/tools">
+    xmlns:bind="http://schemas.android.com/apk/res-auto">
 
     <data>
         <import type="android.view.View" />
-        <import type="org.linphone.core.ConsolidatedPresence" />
+        <import type="org.sipout.phone.core.ConsolidatedPresence" />
         <variable
             name="backClickListener"
             type="View.OnClickListener" />
@@ -17,7 +17,7 @@
             type="View.OnClickListener" />
         <variable
             name="viewModel"
-            type="org.linphone.ui.main.contacts.viewmodel.ContactViewModel" />
+            type="org.sipout.phone.ui.main.contacts.viewmodel.ContactViewModel" />
     </data>
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout

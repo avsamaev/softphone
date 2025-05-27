@@ -80,4 +80,14 @@
         <attr name="color_bottom_sheet_handle" format="color"/>
         <attr name="color_bottom_sheet_background" format="color"/>
     </declare-styleable>
+    <declare-styleable name="CustomViewStub"> <!-- или имя, если нужно -->
+        <attr name="inflatedVisibility" format="enum">
+            <enum name="visible" value="0"/>
+            <enum name="invisible" value="1"/>
+            <enum name="gone" value="2"/>
+        </attr>
+        <attr name="ignore" format="boolean" />
+    </declare-styleable>
+
+
 </resources>

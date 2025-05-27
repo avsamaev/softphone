@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:bind="http://schemas.android.com/tools">
+    xmlns:bind="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <data>
         <import type="android.view.View" />
@@ -20,7 +21,7 @@
             type="View.OnClickListener" />
         <variable
             name="viewModel"
-            type="org.linphone.ui.assistant.viewmodel.AccountCreationViewModel" />
+            type="org.sipout.phone.ui.assistant.viewmodel.AccountCreationViewModel" />
     </data>
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
@@ -268,7 +269,7 @@
                     app:layout_constraintBottom_toTopOf="@id/phone_number_error"
                     app:layout_constraintStart_toEndOf="@id/prefix_caret"
                     app:layout_constraintEnd_toEndOf="@id/username"
-                    bind:ignore="RtlSymmetry" />
+                    tools:ignore="RtlSymmetry" />
 
                 <androidx.appcompat.widget.AppCompatTextView
                     style="@style/default_text_style_600"

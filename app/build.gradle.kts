@@ -14,7 +14,7 @@ plugins {
     alias(libs.plugins.crashlytics)
 }
 
-val packageName = "org.linphone"
+val packageName = "org.sipout.sipoutphonepush"
 val useDifferentPackageNameForDebugBuild = false
 
 val sdkPath = providers.gradleProperty("LinphoneSdkBuildDir").get()
@@ -93,7 +93,7 @@ task("linphoneSdkSource") {
 project.tasks.preBuild.dependsOn("linphoneSdkSource")
 
 android {
-    namespace = "org.linphone"
+    namespace = "org.sipout.sipoutphonepush"
     compileSdk = 36
 
     defaultConfig {

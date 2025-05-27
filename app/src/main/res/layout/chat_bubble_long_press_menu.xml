@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:bind="http://schemas.android.com/tools">
+    xmlns:bind="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" >
 
     <data>
         <import type="android.view.View" />
         <variable
             name="viewModel"
-            type="org.linphone.ui.main.chat.viewmodel.ChatMessageLongPressViewModel" />
+            type="org.sipout.phone.ui.main.chat.viewmodel.ChatMessageLongPressViewModel" />
     </data>
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout

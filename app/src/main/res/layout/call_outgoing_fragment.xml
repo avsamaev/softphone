@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:bind="http://schemas.android.com/tools"
+    xmlns:bind="http://schemas.android.com/apk/res-auto"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
         <import type="android.view.View" />
         <variable
             name="viewModel"
-            type="org.linphone.ui.call.viewmodel.CurrentCallViewModel" />
+            type="org.sipout.phone.ui.call.viewmodel.CurrentCallViewModel" />
         <variable
             name="numpadModel"
-            type="org.linphone.ui.main.history.model.NumpadModel" />
+            type="org.sipout.phone.ui.main.history.model.NumpadModel" />
     </data>
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
@@ -113,7 +113,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent" />
 
-            <org.linphone.ui.call.view.RoundCornersTextureView
+            <org.sipout.phone.ui.call.view.RoundCornersTextureView
                 android:id="@+id/local_preview_video_surface"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -121,7 +121,7 @@
                 android:layout_marginBottom="10dp"
                 app:alignTopRight="true"
                 app:displayMode="black_bars"
-                roundCornersRadius="@dimen/call_round_corners_texture_view_radius"
+                app.roundCornersRadius="@dimen/call_round_corners_texture_view_radius"
                 app:layout_constraintBottom_toTopOf="@id/bottom_bar"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHeight_max="@dimen/call_video_preview_max_size"

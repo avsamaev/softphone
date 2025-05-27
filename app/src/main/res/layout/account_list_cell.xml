@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:bind="http://schemas.android.com/tools">
+    xmlns:bind="http://schemas.android.com/apk/res-auto">
 
     <data>
         <import type="android.view.View" />
-        <import type="org.linphone.core.RegistrationState" />
+        <import type="org.sipout.phone.core.RegistrationState" />
         <variable
             name="model"
-            type="org.linphone.ui.main.model.AccountModel" />
+            type="org.sipout.phone.ui.main.model.AccountModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:bind="http://schemas.android.com/tools">
+    xmlns:bind="http://schemas.android.com/apk/res-auto">
 
     <data>
         <import type="android.view.View" />
-        <import type="org.linphone.ui.call.conference.viewmodel.ConferenceViewModel" />
+        <import type="org.sipout.phone.ui.call.conference.viewmodel.ConferenceViewModel" />
         <variable
             name="viewModel"
-            type="org.linphone.ui.call.viewmodel.CurrentCallViewModel" />
+            type="org.sipout.phone.ui.call.viewmodel.CurrentCallViewModel" />
         <variable
             name="conferenceViewModel"
-            type="org.linphone.ui.call.conference.viewmodel.ConferenceViewModel" />
+            type="org.sipout.phone.ui.call.conference.viewmodel.ConferenceViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -37,7 +37,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="@id/active_speaker_name" />
 
-        <org.linphone.ui.call.view.RoundCornersTextureView
+        <org.sipout.phone.ui.call.view.RoundCornersTextureView
+
             android:id="@+id/active_speaker_surface"
             android:layout_width="0dp"
             android:layout_height="0dp"

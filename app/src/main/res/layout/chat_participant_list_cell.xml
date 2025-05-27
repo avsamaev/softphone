@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:bind="http://schemas.android.com/tools">
+    xmlns:bind="http://schemas.android.com/apk/res-auto">
 
     <data>
         <import type="android.view.View" />
         <variable
             name="model"
-            type="org.linphone.ui.main.chat.model.ParticipantModel" />
+            type="org.sipout.phone.ui.main.chat.model.ParticipantModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

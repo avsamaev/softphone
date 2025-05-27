@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:bind="http://schemas.android.com/tools"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:bind="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <data>
         <import type="android.view.View" />
@@ -10,7 +11,7 @@
             type="View.OnClickListener" />
         <variable
             name="model"
-            type="org.linphone.ui.main.history.model.NumpadModel" />
+            type="org.sipout.phone.ui.main.history.model.NumpadModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -22,7 +23,7 @@
         app:behavior_hideable="true"
         app:behavior_peekHeight="0dp"
         app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
-        bind:ignore="HardcodedText">
+        tools:ignore="HardcodedText">
 
         <com.google.android.material.bottomsheet.BottomSheetDragHandleView
             android:id="@+id/numpad_handle"

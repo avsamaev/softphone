@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:bind="http://schemas.android.com/tools">
+    xmlns:bind="http://schemas.android.com/apk/res-auto">
 
     <data>
         <import type="android.view.View" />
@@ -34,13 +34,13 @@
             type="View.OnClickListener" />
         <variable
             name="viewModel"
-            type="org.linphone.ui.main.chat.viewmodel.ConversationViewModel" />
+            type="org.sipout.phone.ui.main.chat.viewmodel.ConversationViewModel" />
         <variable
             name="sendMessageViewModel"
-            type="org.linphone.ui.main.chat.viewmodel.SendMessageInConversationViewModel" />
+            type="org.sipout.phone.ui.main.chat.viewmodel.SendMessageInConversationViewModel" />
         <variable
             name="messageLongPressViewModel"
-            type="org.linphone.ui.main.chat.viewmodel.ChatMessageLongPressViewModel" />
+            type="org.sipout.phone.ui.main.chat.viewmodel.ChatMessageLongPressViewModel" />
     </data>
 
     <FrameLayout
